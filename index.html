@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <title>Portofolio Ghozi</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/logo.png" alt="logo Bngje">
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portofolio">Portfolio</a></li>
+                    <li><a href="#message">Message</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Hi <span id="userNameDisplay"></span>, Welcome to My Website</h1>
+            <p>This is my portfolio website</p>
+        </section>
+        <section id="about">
+            <h2 class="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Ahmad Ghozi Darmawan</h3>
+                    <p>Hi! I'm Ahmad Ghozi Darmawan, a 5th-semester Information Systems student at UIN Sunan Ampel
+                        Surabaya. I'm passionate about technology, especially in frontend development and UI/UX design.
+                        Over time, my interest has grown even stronger in the field of cybersecurity, which I'm now
+                        actively exploring as my primary focus.</p>
+                    <p>I believe that building great digital experiences means not only designing intuitive interfaces
+                        but also ensuring they're secure and trustworthy. I'm a fast learner, always curious, and eager
+                        to grow in this ever-evolving tech landscape.</p>
+                    <div class="about-signature">
+                        <p>Ahmad Ghozi D.</p>
+                        <span>Students who want to become Programmers and Pentesters</span>
+                    </div>
+                </div>
+                <div class="about-image-container">
+                    <img src="/assets/fotobngje.png" alt="Foto Ahmad Ghozi">
+                </div>
+            </div>
+            <a href="#about" class="go-to-about-link">Go to full profile</a>
+        </section>
+        <section id="portofolio">
+            <h2>My Portfolio</h2>
+            <p>Every project here represents a step in my journey — learning, experimenting, and pushing boundaries in
+                frontend and design.</p>
+            <div class="portofolio-cards">
+                <div class="portofolio-card">
+                    <img src="/assets/logonongki.png" alt="Logo Nongki">
+                    <h3>Nongki</h3>
+                    <p>Workspace Booking Website.</p>
+                    <a href="https://gitlab.com/bngje/nongki" target="_blank" class="direct-button">View Projects</a>
+                </div>
+                <div class="portofolio-card">
+                    <img src="/assets/websiteaudit.png" alt="Website Audit">
+                    <h3>Website Audit</h3>
+                    <p>Quality Assurance Management System Website.</p>
+                    <a href="https://gitlab.com/ahmadyusuf03/pemutu" target="_blank" class="direct-button">View Projects</a>
+                </div>
+                <div class="portofolio-card">
+                    <img src="/assets/saveEarth.png" alt="Save Earth">
+                    <h3>SavEarth</h3>
+                    <p>Waste Service Agency Website.</p>
+                    <a href="https://www.figma.com/design/eRACug575dc5u3A0mrisFw/FINAL-PROJECT-MINIBOOTCAMP-Ahmad-Ghozi-Darmawan?node-id=0-1&t=0D9Qg2Q2NUnrYH9Y-1" target="_blank" class="direct-button">View Projects</a>
+                </div>
+                <div class="view-all-button-container">
+                    <a href="#portofolio" class="view-all-button">View All Portofolio</a>
+                </div>
+            </div>
+        </section>
+        <section id="message">
+            <h2>Message me</h2>
+            <div class="message-us">
+                <form id="message-form" action="/submit-message" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message-input" name="message" rows="2"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="form-preview">
+                    <h3>Lasted Comment</h3>
+                    <div id="message-preview" class="message-preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="/assets/logo.png" alt="logo nongki" class="footer-logo">
+                <p>Portfolio Ahmad Ghozi D.</p>
+                <div class="social-links">
+                    <a href="" target="_blank"><img src="/assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/bngje" target="_blank"><img src="/assets/github.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/lescr.e/" target="_blank"><img src="/assets/ig.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#message">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact me</h3>
+                <p><img src="/assets/map.png" alt="">Jombang, Indonesia</p>
+                <p><img src="/assets/mail.png" alt="">ahmadghozi106@gmail.com</p>
+                <p><img src="/assets/phone.png" alt="">+62 812-253-284-175</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bngje. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
