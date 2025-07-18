@@ -89,7 +89,7 @@ a.active {
 
 /* Hero Section Styles */
 #hero {
-    background: url('/assets/heropic.jpg') center/cover no-repeat;
+    background: url('../assets/heropic.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
